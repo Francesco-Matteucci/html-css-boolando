@@ -172,3 +172,10 @@ footer {
 .pages {
     text-align: right;
 }
+
+
+/*BONUS*/
+
+.heart-box:hover {
+    color: #f00;
+}
