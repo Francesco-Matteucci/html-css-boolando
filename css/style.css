@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*utilities*/
+
+.border {
+    border: 2px dashed black;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+/*header*/
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.h-navbar {
+    color: white;
+    font-weight: 600;
+    background-color: #FF6900;
+    height: 80px;
+    box-shadow: 2px 2px 10px #dedede;
+
+}
+
+.nav>* {
+    flex-basis: 33%;
+}
+
+.nav {
+    height: 80px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.logo>img {
+    height: 40px;
+}
+
+.userbar {
+    text-align: right;
+}
+
+.userbar>* {
+    padding-right: 5px;
+}
