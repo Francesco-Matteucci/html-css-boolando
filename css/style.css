@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+main {
+    margin-bottom: 80px;
+}
+
 
 /*utilities*/
 
@@ -20,13 +24,51 @@
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 6px;
+}
+
+.red-price {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.discount {
+    background-color: #f00;
+    color: white;
+    padding: 2px 4px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.label {
+    background-color: darkgreen;
+    color: white;
+    padding: 2px 4px;
+    width: 100px;
+    position: absolute;
+    left: 55px;
+    bottom: 100px;
+}
+
+
+a,
+.userbar>i,
+.pages>i {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 /*header*/
 
 header {
     position: sticky;
+    z-index: 1;
     top: 0;
     right: 0;
 }
@@ -63,4 +105,70 @@ ul {
 
 .userbar>* {
     padding-right: 5px;
+}
+
+/*main*/
+.row {
+    flex-wrap: wrap;
+
+}
+
+.products {
+    margin-top: 100px;
+}
+
+.box-img,
+.box-img-after {
+    width: 390px;
+}
+
+.col {
+    text-align: left;
+    position: relative
+}
+
+.heart-box {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+.change-prod:hover .box-img {
+    display: none
+}
+
+.change-prod:hover .box-img-after {
+    display: block;
+}
+
+/*footer*/
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+    height: 80px;
+}
+
+.f-navbar>* {
+    flex-basis: 50%;
+}
+
+.info-title {
+    text-align: left;
+}
+
+.informations,
+.pages {
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.pages {
+    text-align: right;
 }
